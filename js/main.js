@@ -9,8 +9,8 @@ $.ajax({
     $.ajax({
       url: "http://api.openweathermap.org/data/2.5/weather?zip=" + resp.postal + ",us&appid=d82584a521ae673b1d3d837008607159",
       success: function(innerresp, innertxt, innerxhr){
-        var ans = "The Mininum Temperature is: <span class='value'>" + innerresp.main.temp_min + "</span><br />" +
-                  "The Maximun Temperature is: <span class='value'>" + innerresp.main.temp_max + "</span><br />" +
+        var ans = "The Mininum Temperature is: <span class='value'>" + (parseFloat(innerresp.main.temp_min) - 273).toFixed(2) + "</span><br />" +
+                  "The Maximun Temperature is: <span class='value'>" + (parseFloat(innerresp.main.temp_max) - 273).toFixed(2) + "</span><br />" +
                   "The Humidity average is: <span class='value'>" + innerresp.main.humidity + "%</span>";
         $("#weather").html(ans);
       }
