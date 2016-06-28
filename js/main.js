@@ -13,6 +13,7 @@ $.ajax({
                   "The Maximun Temperature is: <span class='value'>" + (parseFloat(innerresp.main.temp_max) - 273).toFixed(2) + " C</span><br />" +
                   "The Humidity average is: <span class='value'>" + innerresp.main.humidity + "%</span>";
         $("#weather").html(ans);
+        $("#icon").attr("src", "http://openweathermap.org/img/w/" + innerresp.weather[0].icon + ".png");
       }
     });
   }

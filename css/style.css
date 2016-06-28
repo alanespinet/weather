@@ -1,21 +1,30 @@
 body{
-  background-image: url("../img/sky.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #000000;
   padding-top: 200px;
+}
+
+#titulo{
+  color: #ffffb3;
 }
 
 h1, h2, h3, h4, h5, h6{
   text-align: center;
   font-family: Arial;
+  color: white;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
 #weather{
-  color: #000066;
+  color: #ccccff;
 }
 
 .value{
-  color: #3d0099;
+  color: #b3ffe6;
   font-style: italic;
   font-size: 20px;
 }
