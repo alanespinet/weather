@@ -1,7 +1,21 @@
+body{
+  background-image: url("../img/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 200px;
+}
+
 h1, h2, h3, h4, h5, h6{
   text-align: center;
+  font-family: Arial;
 }
 
 #weather{
-  color: red;
+  color: #000066;
+}
+
+.value{
+  color: #3d0099;
+  font-style: italic;
+  font-size: 20px;
 }
